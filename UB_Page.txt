@@ -1,0 +1,291 @@
+<META HTTP-EQUIV="CONTENT-TYPE"CONTENT="text/html; charset=UTF-8">
+<html>
+<head>
+<meta http-equiv='Refresh' content='5; URL=ViewAcPower.html'>
+<script src='DV7KG966.JS' type='text/javascript'></script>
+<link rel='stylesheet' type='text/css' href='CMPONNTS.CSS'>
+<link rel='stylesheet' type='text/css' href='CNTAINRS.CSS'>
+</head><body onload = 'setScrollTop(&#39flagScroll&#39,&#39workingArea&#39)'>
+<div id='header'><div id='topHeader'>
+<div id='customerLogo'>
+<div class='helpIcon'>
+<a href='HELP_US.PDF' onclick='window.open(this.href);return false'>
+<img border='0' src='HELP.GIF' width='16' height='18' alt='[Help]' />
+</a>
+</div>
+</div>
+<div id='controls'>
+<div id='loginInfo'></div>
+<div id='browserControl'>
+</div>
+</div>
+<div id='headerLogo'>
+<div id='vendorLogo'><img border='0' src='SIEMENS.GIF' width='83' height='36' alt='[siemensLogo]' /></div>
+<div id='applicationLogo'><img border='0' src='APPLLOGO.GIF' width='164' height='15' alt='[applicationLogo]' /></div>
+</div>
+</div>
+<div id='mainNavigation'>
+<a href='InfoDeviceInfo.html'>
+<div class='mainNavigationInfoButton'>Information</div>
+</a>
+<a href='ModeCfgHome.html'>
+<div class='mainNavigationInfoButton'>Configure</div>
+</a>
+<a href='ViewAcOpVals.html'>
+<div class='mainNavigationInfoButtonActive'>Value view and evaluation</div>
+</a>
+<a href='ModeMaintHome.html'>
+<div class='mainNavigationInfoButton'>Maintenance</div>
+</a>
+<div id='deviceSelection'>
+<span class='defaultLabel'>SE1 UB Medidor</span>
+</div>
+</div>
+</div><script type="text/javascript">
+function setScrollBarHeight() {
+if(document.getElementById("treeNavigation"))
+document.getElementById("treeNavigation").style.height = document.body.clientHeight-130;
+}
+window.attachEvent("onload", setScrollBarHeight);
+window.attachEvent("onresize", setScrollBarHeight);
+</script>
+<div id='navigationSidebar'>
+<div id='treeOpener'></div>
+<div id='treeNavigation'>
+<div id='treeNavigationContainer'>
+<div class = 'treeElement'>
+<div class = 'treeElementHeadlineBackground'></div>
+<div class = 'treeElementHeadline'>
+Value view and evaluation</div>
+</div>
+<div class = 'treeElement'>
+<div class = 'treeElementBackgroundBorderTop'></div>
+<div class = 'treeElementParentBorderTop'>
+<div class = 'listOpener'></div>&#x25bc; Operational parameters </div>
+</div>
+<div class = 'treeElement'>
+<div class = 'treeElementBackground'></div>
+<div class = 'treeElementParent'>
+&nbsp; <div class = 'listOpener'></div>&#x25bc; Process connections </div>
+</div>
+<div class = 'treeElement'>
+<div class = 'treeElementNoChildren'>
+<a href = 'ViewAcOpVals.html'> AC operational values </a> 
+</div>
+</div>
+<div class = 'treeElement'>
+<div class = 'treeElementNoChildren' onclick = 'clearScrollTop(&#39flagScroll&#39)'>
+<a href = 'ViewAcHarmonicsVoltage.html'> Harmonics voltage </a> 
+</div>
+</div>
+<div class = 'treeElement'>
+<div class = 'treeElementNoChildren' onclick = 'clearScrollTop(&#39flagScroll&#39)'>
+<a href = 'ViewAcHarmonicsCurrent.html'> Harmonics current </a> 
+</div>
+</div>
+<div class = 'treeElement'>
+<div class = 'treeElementNoChildren' onclick = 'clearScrollTop(&#39flagScroll&#39)'>
+<a href = 'ViewAcPower.html'> AC power and energy </a> 
+</div>
+</div>
+<div class = 'treeElement'>
+<div class = 'treeElementNoChildren' onclick = 'clearScrollTop(&#39flagScroll&#39)'>
+<a href = 'ViewFrozenEnergy.html'> Frozen energy </a> 
+</div>
+</div>
+<div class = 'treeElement'>
+<div class = 'treeElementNoChildren'>
+<a href = 'ViewBinaryOutputs.html'> Binary outputs </a> 
+</div>
+</div>
+<div class = 'treeElement'>
+<div class = 'treeElementBackground'></div>
+<div class = 'treeElementParent'>
+&nbsp; <div class = 'listOpener'></div>&#x25bc; Automation functions </div>
+</div>
+<div class = 'treeElement'>
+<div class = 'treeElementNoChildren'>
+<a href = 'ViewMeasurandLimits.html'> Limits </a> 
+</div>
+</div>
+<div class = 'treeElement'>
+<div class = 'treeElementNoChildren'>
+<a href = 'ViewGroupIndications.html'> Group indications </a> 
+</div>
+</div>
+<div class = 'treeElement'>
+<div class = 'treeElementBackgroundBorderTop'></div>
+<div class = 'treeElementParentBorderTop'>
+<div class = 'listOpener'></div>&#x25bc; Evaluation and data management </div>
+</div>
+<div class = 'treeElement'>
+<div class = 'treeElementNoChildren'>
+<a href = 'ViewRecord.html'> Records  </a> 
+</div>
+</div>
+<div class = 'treeElement'>
+<div class = 'treeElementNoChildren'>
+<a href = 'ViewFileTransfer.html'> File transfer </a> 
+</div>
+</div>
+<div class = 'treeElement'>
+<div class = 'treeElementNoChildren'>
+<a href = 'ViewStorage.html'> Memory management </a> 
+</div>
+</div>
+</div> 
+</div></div><div id='contentInfobar'>
+<div id='breadcrumb'>
+Value view and evaluation<div class='breadcrumbArrow'>&#x25ba;</div>
+Operational parameters<div class='breadcrumbArrow'>&#x25ba;</div>
+Process connections<div class='breadcrumbArrow'>&#x25ba;</div>
+<span id='target'>AC power and energy</span>
+</div>
+</div>
+<form action='ViewAcPower.html' method='get'>
+<div id='workingArea' onscroll='setCookie(&#39flagScroll&#39,this.scrollTop)'>
+<div class='itemHeadlineActive'> &#x25bc; Power </div>
+<table border='2'>
+<tr>
+<th align=left style='width:70px' colspan='1'> Measurand </th>
+<th style='width:40px' colspan='1'> Unit </th>
+<th style='width:80px' colspan='1'> Value </th>
+<th colspan='2'> Min value  </th>
+<th colspan='2'> Max value  </th>
+</tr>
+<tr>
+<td> Pa </td><td style='text-align:center;'>  W </td><td style='text-align:center'> 2559300.75 </td><td align=right style='width:60px;padding-right:10px'>-376478.95</td><td width=140 align=left style='padding-left:10px'>2000-02-21  01:09:45:260</td>
+<td align=right style='width:60px;padding-right:10px'>3733869.25</td><td width=140 align=left style='padding-left:10px'>2020-02-22  21:44:08:768</td>
+</tr>
+<tr>
+<td> Pb </td><td style='text-align:center;'>  W </td><td style='text-align:center'> 2642193.50 </td><td align=right style='width:60px;padding-right:10px'>-399277.23</td><td width=140 align=left style='padding-left:10px'>2000-02-21  01:09:45:260</td>
+<td align=right style='width:60px;padding-right:10px'>3719429.00</td><td width=140 align=left style='padding-left:10px'>2019-05-24  17:13:37:378</td>
+</tr>
+<tr>
+<td> Pc </td><td style='text-align:center;'>  W </td><td style='text-align:center'> 2661491.75 </td><td align=right style='width:60px;padding-right:10px'>-386019.13</td><td width=140 align=left style='padding-left:10px'>2000-02-21  01:09:45:260</td>
+<td align=right style='width:60px;padding-right:10px'>3699276.25</td><td width=140 align=left style='padding-left:10px'>2020-02-22  21:44:08:768</td>
+</tr>
+<tr>
+<td> P </td><td style='text-align:center;'>  W </td><td style='text-align:center'> 7862986.50 </td><td align=right style='width:60px;padding-right:10px'>-1161775.25</td><td width=140 align=left style='padding-left:10px'>2000-02-21  01:09:45:260</td>
+<td align=right style='width:60px;padding-right:10px'>11133312.50</td><td width=140 align=left style='padding-left:10px'>2020-02-22  21:44:08:768</td>
+</tr>
+<tr>
+<td> Qa </td><td style='text-align:center;'>  var </td><td style='text-align:center'> 1542075.25 </td><td align=right style='width:60px;padding-right:10px'>-3730965.25</td><td width=140 align=left style='padding-left:10px'>2019-11-23  04:34:19:574</td>
+<td align=right style='width:60px;padding-right:10px'>4939661.00</td><td width=140 align=left style='padding-left:10px'>2020-02-25  11:28:53:370</td>
+</tr>
+<tr>
+<td> Qb </td><td style='text-align:center;'>  var </td><td style='text-align:center'> 1539187.50 </td><td align=right style='width:60px;padding-right:10px'>-4297445.00</td><td width=140 align=left style='padding-left:10px'>2019-11-23  04:34:19:574</td>
+<td align=right style='width:60px;padding-right:10px'>4872756.00</td><td width=140 align=left style='padding-left:10px'>2020-02-25  11:28:53:370</td>
+</tr>
+<tr>
+<td> Qc </td><td style='text-align:center;'>  var </td><td style='text-align:center'> 1653150.75 </td><td align=right style='width:60px;padding-right:10px'>-1821109.63</td><td width=140 align=left style='padding-left:10px'>2000-02-28  01:32:40:803</td>
+<td align=right style='width:60px;padding-right:10px'>4806733.50</td><td width=140 align=left style='padding-left:10px'>2020-02-25  11:28:53:370</td>
+</tr>
+<tr>
+<td> Q </td><td style='text-align:center;'>  var </td><td style='text-align:center'> 4779479.50 </td><td align=right style='width:60px;padding-right:10px'>-4902479.50</td><td width=140 align=left style='padding-left:10px'>2019-11-23  04:34:19:574</td>
+<td align=right style='width:60px;padding-right:10px'>14619150.00</td><td width=140 align=left style='padding-left:10px'>2020-02-25  11:28:53:370</td>
+</tr>
+<tr>
+<td> Q1a </td><td style='text-align:center;'>  var </td><td style='text-align:center'> 1580853.63 </td><td align=right style='width:60px;padding-right:10px'>-1495073.13</td><td width=140 align=left style='padding-left:10px'>2019-11-23  04:34:19:574</td>
+<td align=right style='width:60px;padding-right:10px'>2671630.75</td><td width=140 align=left style='padding-left:10px'>2020-02-25  11:28:53:370</td>
+</tr>
+<tr>
+<td> Q1b </td><td style='text-align:center;'>  var </td><td style='text-align:center'> 1532453.75 </td><td align=right style='width:60px;padding-right:10px'>-3493346.50</td><td width=140 align=left style='padding-left:10px'>2019-11-23  04:34:19:574</td>
+<td align=right style='width:60px;padding-right:10px'>2526151.75</td><td width=140 align=left style='padding-left:10px'>2020-02-25  11:28:53:370</td>
+</tr>
+<tr>
+<td> Q1c </td><td style='text-align:center;'>  var </td><td style='text-align:center'> 1646818.38 </td><td align=right style='width:60px;padding-right:10px'>-1705117.13</td><td width=140 align=left style='padding-left:10px'>2019-11-23  04:34:19:574</td>
+<td align=right style='width:60px;padding-right:10px'>2215267.50</td><td width=140 align=left style='padding-left:10px'>2019-10-30  12:15:32:200</td>
+</tr>
+<tr>
+<td> Q1 </td><td style='text-align:center;'>  var </td><td style='text-align:center'> 4760125.50 </td><td align=right style='width:60px;padding-right:10px'>-6693537.00</td><td width=140 align=left style='padding-left:10px'>2019-11-23  04:34:19:574</td>
+<td align=right style='width:60px;padding-right:10px'>7375559.50</td><td width=140 align=left style='padding-left:10px'>2020-02-25  11:28:53:370</td>
+</tr>
+<tr>
+<td> Sa </td><td style='text-align:center;'>  VA </td><td style='text-align:center'> 3118382.75 </td><td align=right style='width:60px;padding-right:10px'>0.00</td><td width=140 align=left style='padding-left:10px'>1999-12-31  21:13:59:895</td>
+<td align=right style='width:60px;padding-right:10px'>5151710.00</td><td width=140 align=left style='padding-left:10px'>2020-02-25  11:28:53:370</td>
+</tr>
+<tr>
+<td> Sb </td><td style='text-align:center;'>  VA </td><td style='text-align:center'> 3160642.25 </td><td align=right style='width:60px;padding-right:10px'>0.00</td><td width=140 align=left style='padding-left:10px'>2000-02-14  20:05:09:263</td>
+<td align=right style='width:60px;padding-right:10px'>5074046.00</td><td width=140 align=left style='padding-left:10px'>2020-02-25  11:28:53:370</td>
+</tr>
+<tr>
+<td> Sc </td><td style='text-align:center;'>  VA </td><td style='text-align:center'> 3234343.50 </td><td align=right style='width:60px;padding-right:10px'>0.00</td><td width=140 align=left style='padding-left:10px'>1999-12-31  21:13:59:895</td>
+<td align=right style='width:60px;padding-right:10px'>5012610.50</td><td width=140 align=left style='padding-left:10px'>2020-02-25  11:28:53:370</td>
+</tr>
+<tr>
+<td> S </td><td style='text-align:center;'>  VA </td><td style='text-align:center'> 9513367.00 </td><td align=right style='width:60px;padding-right:10px'>0.00</td><td width=140 align=left style='padding-left:10px'>2000-02-14  20:05:09:478</td>
+<td align=right style='width:60px;padding-right:10px'>15238366.25</td><td width=140 align=left style='padding-left:10px'>2020-02-25  11:28:53:370</td>
+</tr>
+</table>
+<br />
+<div class='itemHeadlineActive'> &#x25bc; Energy </div>
+<table border='2'>
+<tr>
+<th style='width:80px' colspan='1'> Measurand </th>
+<th style='width:120px' colspan='1'> Value </th>
+<th style='width:60px' colspan='1'> Unit </th>
+</tr>
+<tr>
+<td> WPa_exp </td><td  style='text-align:center'> 876.30 </td><td style='text-align:center;'>  Wh </td></tr>
+<tr>
+<td> WPb_exp </td><td  style='text-align:center'> 438.15 </td><td style='text-align:center;'>  Wh </td></tr>
+<tr>
+<td> WPc_exp </td><td  style='text-align:center'> 438.15 </td><td style='text-align:center;'>  Wh </td></tr>
+<tr>
+<td> WP_exp </td><td  style='text-align:center'> 1095.38 </td><td style='text-align:center;'>  Wh </td></tr>
+<tr>
+<td> WPa_imp </td><td  style='text-align:center'> 5588230500.00 </td><td style='text-align:center;'>  Wh </td></tr>
+<tr>
+<td> WPb_imp </td><td  style='text-align:center'> 5600931000.00 </td><td style='text-align:center;'>  Wh </td></tr>
+<tr>
+<td> WPc_imp </td><td  style='text-align:center'> 5572978000.00 </td><td style='text-align:center;'>  Wh </td></tr>
+<tr>
+<td> WP_imp </td><td  style='text-align:center'> 16762133750.00 </td><td style='text-align:center;'>  Wh </td></tr>
+<tr>
+<td> WQa_ind </td><td  style='text-align:center'> 2877063000.00 </td><td style='text-align:center;'>  varh </td></tr>
+<tr>
+<td> WQb_ind </td><td  style='text-align:center'> 2896313500.00 </td><td style='text-align:center;'>  varh </td></tr>
+<tr>
+<td> WQc_ind </td><td  style='text-align:center'> 2871198250.00 </td><td style='text-align:center;'>  varh </td></tr>
+<tr>
+<td> WQ_ind </td><td  style='text-align:center'> 8637748000.00 </td><td style='text-align:center;'>  varh </td></tr>
+<tr>
+<td> WQa_cap </td><td  style='text-align:center'> 40301327.50 </td><td style='text-align:center;'>  varh </td></tr>
+<tr>
+<td> WQb_cap </td><td  style='text-align:center'> 50107855.00 </td><td style='text-align:center;'>  varh </td></tr>
+<tr>
+<td> WQc_cap </td><td  style='text-align:center'> 35783272.50 </td><td style='text-align:center;'>  varh </td></tr>
+<tr>
+<td> WQ_cap </td><td  style='text-align:center'> 119360537.50 </td><td style='text-align:center;'>  varh </td></tr>
+<tr>
+<td> WQa_imp </td><td  style='text-align:center'> 2869853250.00 </td><td style='text-align:center;'>  varh </td></tr>
+<tr>
+<td> WQb_imp </td><td  style='text-align:center'> 2889436000.00 </td><td style='text-align:center;'>  varh </td></tr>
+<tr>
+<td> WQc_imp </td><td  style='text-align:center'> 2864280500.00 </td><td style='text-align:center;'>  varh </td></tr>
+<tr>
+<td> WQ_imp </td><td  style='text-align:center'> 8617010000.00 </td><td style='text-align:center;'>  varh </td></tr>
+<tr>
+<td> WQa_exp </td><td  style='text-align:center'> 40294027.50 </td><td style='text-align:center;'>  varh </td></tr>
+<tr>
+<td> WQb_exp </td><td  style='text-align:center'> 49836715.00 </td><td style='text-align:center;'>  varh </td></tr>
+<tr>
+<td> WQc_exp </td><td  style='text-align:center'> 35781960.00 </td><td style='text-align:center;'>  varh </td></tr>
+<tr>
+<td> WQ_exp </td><td  style='text-align:center'> 119356437.50 </td><td style='text-align:center;'>  varh </td></tr>
+<tr>
+<td> WSa </td><td  style='text-align:center'> 6347833000.00 </td><td style='text-align:center;'>  VAh </td></tr>
+<tr>
+<td> WSb </td><td  style='text-align:center'> 6367689500.00 </td><td style='text-align:center;'>  VAh </td></tr>
+<tr>
+<td> WSc </td><td  style='text-align:center'> 6323273000.00 </td><td style='text-align:center;'>  VAh </td></tr>
+<tr>
+<td> WS </td><td  style='text-align:center'> 19038790000.00 </td><td style='text-align:center;'>  VAh </td></tr>
+</table>
+<br />
+</div>
+<div id = 'footer'>
+<span class = 'footerMessage'></span></div>
+</form>
+</body></html>

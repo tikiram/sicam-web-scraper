@@ -1,0 +1,19 @@
+{
+  "network": false,
+  "devices": [
+    {
+      "name": "one",
+      "uri": "./UB_Page.txt",
+      "fields": [
+        "WP_imp", "WP_exp"
+      ]
+    },
+    {
+      "name": "one",
+      "uri": "./UB_Page.txt",
+      "fields": [
+        "WP_imp", "WP_exp"
+      ]
+    }
+  ]
+}

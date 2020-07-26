@@ -1,11 +1,13 @@
 
 # SICAM Scraper
 
+## First Use
 
-## Use
 ```bash
 npm install
 ```
+
+## Use
 
 Create config file `scrapConfig.json` based on `scrapConfig-example.json`
 

@@ -1,5 +1,7 @@
 {
   "network": false,
+  "timeFormat": "YYYY-MM-DD_hh.mm.ss",
+  "output": "output2-$TIME.txt",
   "devices": [
     {
       "name": "one",

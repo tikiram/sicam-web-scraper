@@ -2,19 +2,40 @@
   "network": false,
   "timeFormat": "YYYY-MM-DD_hh.mm.ss",
   "output": "output2-$TIME.txt",
+  "onError": {
+    "retries": 3,
+    "timeInterval": 100
+  },
   "devices": [
     {
       "name": "one",
       "uri": "./UB_Page.txt",
       "fields": [
-        "WP_imp", "WP_exp"
+        "WP_imp",
+        {
+          "name": "WP_exp",
+          "valueCellOffset": 1
+        },
+        {
+          "name": "WP_imp",
+          "valueCellOffset": 1
+        }
       ]
     },
     {
-      "name": "one",
+      "name": "two",
       "uri": "./UB_Page.txt",
       "fields": [
-        "WP_imp", "WP_exp"
+        "WP_imp",
+        "WP_exp"
+      ]
+    },
+    {
+      "name": "three",
+      "uri": "./UB_Pagedd.txt",
+      "fields": [
+        "WP_imp",
+        "WP_exp"
       ]
     }
   ]

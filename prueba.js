@@ -26,7 +26,10 @@ ${valuesText}
 }
 
 async function writeResults(results) {
-  const finalString = results.map(resultToString).join('\n\n');
+  const finalString = results
+      .filter(Boolean)
+      .map(resultToString)
+      .join('\n\n');
 
   const timestamp = moment().format(scrapConfig.timeFormat);
 
@@ -34,23 +37,62 @@ async function writeResults(results) {
 
   await fs.writeFile(fileName, finalString);
 
+  console.log();
+  console.log('Results:');
+  console.log();
   console.log(finalString);
   console.log();
   console.log('>>>> File saved: ' + fileName);
 }
 
+function serializeConfig(fieldConfig) {
+  const isConfText = typeof fieldConfig === 'string'
+  const field = isConfText ? fieldConfig : fieldConfig.name;
+  const valueCellOffset = isConfText? 1 : fieldConfig.valueCellOffset;
+  return { field, valueCellOffset };
+}
 
-async function readDevices({devices, sourceAction}) {
+function getValues(device, domCells) {
+  const values = device.fields.map(fieldConfig => {
+    const { field, valueCellOffset } = serializeConfig(fieldConfig);
+
+    const titleIndex = domCells.findIndex(td => td.text.trim() === field);
+
+    if (titleIndex === -1) {
+      return undefined;
+    }
+
+    const value = domCells[titleIndex + valueCellOffset].text;
+    return { field, value };
+  })
+  return values.filter(Boolean);
+}
+
+async function fetchResource(fetcher, uri, retriesOnError, timeIntervalOnError) {
+  for(let i = 0; i < retriesOnError; i++){
+    try {
+      return await fetcher(uri);
+    }
+    catch (e) {
+      await new Promise(r => setTimeout(r, timeIntervalOnError));
+      console.log('Error getting resource:', uri);
+    }
+  }
+  return undefined;
+}
+
+async function readDevices({ devices, sourceAction, retriesOnError, timeIntervalOnError }) {
   const resultPromises = devices.map(async (device) => {
-    const text = await sourceAction(device.uri);
+    const text = await fetchResource(sourceAction, device.uri, retriesOnError, timeIntervalOnError);
+
+    if (text === undefined) {
+      return undefined;
+    }
+
     const root = parse(text);
     const tds = root.querySelectorAll('td');
 
-    const values = device.fields.map(field => {
-      const titleIndex = tds.findIndex(td => td.text.trim() === field);
-      const value = tds[titleIndex + 1].text;
-      return {field, value};
-    })
+    const values = getValues(device, tds);
 
     return {
       name: device.name,
@@ -69,6 +111,8 @@ async function main() {
     await readDevices({
       devices: scrapConfig.devices,
       sourceAction: scrapConfig.network ? getValueFromPage : getValueFromFile,
+      retriesOnError: scrapConfig.onError.retries,
+      timeIntervalOnError: scrapConfig.onError.timeInterval,
     });
   } catch (error) {
     console.log('An error happened:')
